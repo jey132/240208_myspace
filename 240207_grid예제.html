@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid 응용</title>
+    <style>
+        /* 그리드 쓸거면 따로 이미지 사이즈 지정이 필요없군..! */
+        /* div{
+            width: 400px;
+            height: 400px;
+        } */
+
+        .univ{
+            display: grid;
+            gap: 20px 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4,200px);
+            grid-template-areas:
+            "box01 box01 box02"
+            "box03 box04 box02"
+            "box05 box04 box06"
+            "box05 box07 box07";
+
+        }
+        .box1{
+            background-image: url(/개인페이지/개인페이지_images/grid/1earth-1756274_1280\ \(1\).jpg);
+            grid-area: box01;
+        }
+
+        .box2{
+            background-image: url(/개인페이지/개인페이지_images/grid/2earth-1756274_1280\ \(2\).jpg);
+            grid-area: box02;
+        }
+
+        .box3{
+            background-image: url(/개인페이지/개인페이지_images/grid/3earth-1756274_1280\ \(3\).jpg);
+            grid-area: box03;
+        }
+
+        .box4{
+            background-image: url(/개인페이지/개인페이지_images/grid/4stars-2643089_1280.jpg);
+            grid-area: box04;
+        }
+
+        .box5{
+            background-image: url(/개인페이지/개인페이지_images/grid//5space-911785_1280.jpg);
+            grid-area: box05;
+        }
+
+        .box6{
+            background-image: url(/개인페이지/개인페이지_images/grid/6astronaut-4106766_1280.jpg);
+            grid-area: box06;
+        }
+
+        .box7{
+            background-image: url(/개인페이지/개인페이지_images/grid/8milky-way-74005_1280.jpg);
+            grid-area: box07;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="univ">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+    </div>
+</body>
+</html>
