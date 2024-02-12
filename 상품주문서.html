@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문서 작성하기</title>
+    <style>
+        fieldset{
+            width: 500px;
+        }
+        legend{
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <h1>🍔상품 주문서🍕</h1>
+    <form action="">
+    <fieldset>
+        <legend><b>개인 정보</b></legend>
+        🙍‍♂️<strong>이름</strong> <input type="text" id="name" placeholder="여백없이 입력">
+        <br>
+        📞<strong>연락처</strong> <input type="phone" id="phone" placeholder="연락가능한 번호">
+    </fieldset>
+    <fieldset>
+        <legend><b>배송지 정보</b></legend>
+        <b>주소</b> <input type="addr" id="addr">
+        <br>
+        <b>전화번호</b> <input type="phone" id="phone">
+        <br>
+        📌<b>메모</b> <textarea name="" id="" cols="65" rows="5"></textarea>
+        <label for="one"><input type="checkbox" id="one" value="one" checked> 일회용품 빼고 주세요</label>
+    </fieldset>
+    <fieldset>
+      <legend><b>주문 정보</b></legend>
+        <table border>
+            <tr>    
+                <th>이미지</th>
+                <th colspan="2">제품명 및 수량</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg" alt="햄버거" width="50px">
+                </td>
+                <td>
+                    <label for="burger"><input type="checkbox" id="burger" value="b_1"> 햄버거 <input type="number" id="burger" value="0" min="0">개</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://cdn.pixabay.com/photo/2020/06/08/16/49/pizza-5275191_1280.jpg" alt="피자" width="50px">
+                </td>
+                <td>
+                    <label for="pizza"><input type="checkbox" id="pizza" value="p_1"> 피자 <input type="number" id="pizza" value="0" min="0">개</label>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <img src="https://cdn.pixabay.com/photo/2015/10/13/21/12/soft-drink-986803_1280.jpg" alt="콜라사이다" width="50px">
+                </td>
+                <td>
+                    <label for="coke"><input type="checkbox" id="coke" value="c_1"> 콜라 <input type="number" id="coke" value="0" min="0">개</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="soda"><input type="checkbox" id="soda" value="s_1"> 사이다 <input type="number" id="soda" value="0" min="0">개</label>
+                </td>
+            </tr>     
+        </table>
+    </fieldset>         
+    <input type="submit" value="주문하기">
+    <input type="reset" value="다시 작성">    
+</form>
+    
+</body>
+</html>
+
