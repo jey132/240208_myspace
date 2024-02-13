@@ -36,31 +36,31 @@ div img{
     display: inline-block;
 }
 .main_logo .my01{
-    animation: logo_m1 linear 2s infinite;
+    animation: logo_m1 linear 3s infinite;
 }
 
 .main_logo .my02{
-    animation: logo_m2 linear 2s infinite;
+    animation: logo_m2 linear 3s infinite;
 }
 
 .main_logo .sp01{
-    animation: logo_sp1 linear 2s infinite;
+    animation: logo_sp1 linear 3s infinite;
 }
 
 .main_logo .sp02{
-    animation: logo_sp2 linear 2s infinite;
+    animation: logo_sp2 linear 3s infinite;
 }
 
 .main_logo .sp03{
-    animation: logo_sp3 linear 2s infinite;
+    animation: logo_sp3 linear 3s infinite;
 }
 
 .main_logo .sp04{
-    animation: logo_sp4 linear 2s infinite;
+    animation: logo_sp4 linear 3s infinite;
 }
 
 .main_logo .sp05{
-    animation: logo_sp5 linear 2s infinite;
+    animation: logo_sp5 linear 3s infinite;
 }
 
 @keyframes logo_m1 {
@@ -91,6 +91,29 @@ div img{
     91%{color: #4285F4;}
 }
 
+span{
+    position: fixed;
+    top: 28.8%;
+    left: 44%;
+    z-index: 2;
+    animation: searchGo 8s linear infinite;
+    color: #8A8D92;
+}
+
+.searchBar{
+    position: relative;
+    z-index: -1;
+}
+
+@keyframes searchGo{
+    from{left : 38%;}
+    to{left : 50%;}
+    0%{opacity: 0;}
+    10%{opacity: 1;}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
+
+}
 
 
 
